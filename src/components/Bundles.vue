@@ -38,37 +38,37 @@
 </script>
 
 <template>
-    <v-container style="background-color:#CFD0D6" class="mt-12">
+    <v-container class="w-[min(1200px,100%-2rem)] mx-auto mt-10 bg-secondary rounded-3xl p-8">
         <v-row>
-            <div class="text-display-medium mb-12">Bundles and Pricing</div>
+            <div class="text-h3 font-weight-bold mb-8">Bundles and Pricing</div>
         </v-row>
         <v-row>
-              <div class="text-display-medium font-itallic"> Click on a bundle to subscribe</div>
+              <div class="text-h6 text-medium-emphasis mb-4"> Click on a bundle to subscribe</div>
         </v-row>
         <v-row>
             <v-col md="3">
-                <v-card class="text-center" @click="showBundle('Daily Pass', 500)" hover>
+                <v-card class="text-center rounded-xl transition-transform duration-200 hover:-translate-y-1" @click="showBundle('Daily Pass', 500)" hover>
                     <v-icon color="#3A4B68" icon="mdi-clock-outline" size="large" class="mt-8"></v-icon>
                     <v-card-title color="#3A4B68">Daily Pass</v-card-title>
                     <v-card-text>500 Ksh</v-card-text>
                 </v-card>
             </v-col>
             <v-col md="3">
-                <v-card class="text-center" @click="showBundle('1 Month', 5500)" hover>
+                <v-card class="text-center rounded-xl transition-transform duration-200 hover:-translate-y-1" @click="showBundle('1 Month', 5500)" hover>
                     <v-icon color="#3A4B68" icon="mdi-calendar-blank" size="large" class="mt-8"></v-icon>
                     <v-card-title color="#3A4B68">1 Month</v-card-title>
                     <v-card-text>5500 Ksh</v-card-text>
                 </v-card>
             </v-col>
             <v-col md="3">
-                <v-card class="text-center" @click="showBundle('3 Months', 15000)" hover>
+                <v-card class="text-center rounded-xl transition-transform duration-200 hover:-translate-y-1" @click="showBundle('3 Months', 15000)" hover>
                     <v-icon color="#3A4B68" icon="mdi-numeric-3-circle-outline" size="large" class="mt-8"></v-icon>
                     <v-card-title color="#3A4B68">3 Months</v-card-title>
                     <v-card-text>15000 Ksh</v-card-text>
                 </v-card>
             </v-col>
             <v-col md="3">
-                <v-card class="text-center" @click="showBundle('6 Months', 25000)" hover>
+                <v-card class="text-center rounded-xl transition-transform duration-200 hover:-translate-y-1" @click="showBundle('6 Months', 25000)" hover>
                     <v-icon color="#3A4B68" icon="mdi-numeric-6-circle-outline" size="large" class="mt-8"></v-icon>
                     <v-card-title color="#3A4B68">6 Months</v-card-title>
                     <v-card-text>25000 Ksh</v-card-text>
@@ -77,7 +77,7 @@
         </v-row>
         <v-row>
             <v-col md="12">
-                <v-card class="text-center"            @click="showBundle('12 Months', 45000)" hover>
+                <v-card class="text-center rounded-xl transition-transform duration-200 hover:-translate-y-1"            @click="showBundle('12 Months', 45000)" hover>
                     <v-icon color="#3A4B68" icon="mdi-timer-sand-full" size="large" class="mt-8"></v-icon>
                     <v-card-title color="#3A4B68">12 Months</v-card-title>
                     <v-card-text>45000 Ksh</v-card-text>
@@ -86,33 +86,33 @@
         </v-row>
     </v-container>
     <!-- What's Included -->
-     <v-container style="background-color:#CFD0D6" class="mt-12">
+     <v-container class="w-[min(1200px,100%-2rem)] mx-auto mt-8 bg-secondary rounded-3xl p-8">
         <v-row>
             <v-col md="12">
-                <div class="text-display-medium mb-12">What's included in your bundle</div>
+                <div class="text-h4 font-weight-bold mb-8">What's included in your bundle</div>
             </v-col>
         </v-row>
         <v-row>
             <v-col md="3">
-                <v-card class="text-center" hover>
+                <v-card class="text-center rounded-xl" hover>
                     <v-icon color="#3A4B68" icon="mdi-food-variant" size="large" class="mt-8"></v-icon>
                     <v-card-text color="#3A4B68">Personalized Meal Plan</v-card-text>
                 </v-card>
             </v-col>
             <v-col md="3">
-                <v-card class="text-center" hover>
+                <v-card class="text-center rounded-xl" hover>
                     <v-icon color="#3A4B68" icon="mdi-door" size="large" class="mt-8"></v-icon>
                     <v-card-text color="#3A4B68">24/7 Gym Access</v-card-text>
                 </v-card>
             </v-col>
             <v-col md="3">
-                <v-card class="text-center" hover>
+                <v-card class="text-center rounded-xl" hover>
                     <v-icon color="#3A4B68" icon="mdi-weight-lifter" size="large" class="mt-8"></v-icon>
                     <v-card-text color="#3A4B68">World class trainers</v-card-text>
                 </v-card>
             </v-col>
             <v-col md="3">
-                <v-card class="text-center" hover>
+                <v-card class="text-center rounded-xl" hover>
                     <v-icon color="#3A4B68" icon="mdi-run" size="large" class="mt-8"></v-icon>
                     <v-card-text color="#3A4B68">Running club</v-card-text>
                 </v-card>
@@ -120,13 +120,13 @@
         </v-row>
         <v-row>
             <v-col md="3">
-                <v-card class="text-center" hover>
+                <v-card class="text-center rounded-xl" hover>
                     <v-icon color="#3A4B68" icon="mdi-hiking" size="large" class="mt-8"></v-icon>
                     <v-card-text color="#3A4B68">Hiking club</v-card-text>
                 </v-card>
             </v-col>
             <v-col md="3">
-                <v-card class="text-center" hover>
+                <v-card class="text-center rounded-xl" hover>
                     <v-icon color="#3A4B68" icon="mdi-bike" size="large" class="mt-8"></v-icon>
                     <v-card-text color="#3A4B68">Cycling club</v-card-text>
                 </v-card>
@@ -134,10 +134,10 @@
         </v-row>
      </v-container>
      <!-- How to join -->
-     <v-container style="background-color:#CFD0D6" class="mt-12">
+     <v-container class="w-[min(1200px,100%-2rem)] mx-auto mt-8 bg-secondary rounded-3xl p-8 mb-10">
         <v-row>
             <v-col>
-                <div class="mt-8">How to join</div>
+                <div class="text-h5 font-weight-bold">How to join</div>
             </v-col>
         </v-row>
         <v-row>
